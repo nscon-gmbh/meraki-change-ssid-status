@@ -1,10 +1,11 @@
-# meraki-shut-wifi
 
-Shutdown a specific wireless SSID via Meraki Dashboard API.
+# Meraki change SSID status
+
+Change the status of wireless SSIDs via Meraki Dashboard API.
 
 ## Use Case Description
 
-A customer had the request to quickly shutdown a specific SSID which was available on all Meraki site networks.
+A customer had the request to quickly shutdown a specific SSID which was available on all Meraki site networks. The script searches through the networks of a chosen organization for the specified search string and returns the results of SSIDs found. Then you can choose if you want to change the status from enabled to disable or from disable to enable. A table with the results after the change will be provided at the end.
 
 ## Installation
 
@@ -38,13 +39,15 @@ Make sure to have a valid Meraki API key. Please check the [Meraki Dashboard API
 
 ## Usage
 
-Enter the search string for the SSID(s) you want to shutdown. Be as specific as you can:
+Enter the search string for the SSID(s) you want to change:
 
 ```bash
 python meraki_shutdown_ssid.py <SSID search string>
 ```
 
-Example output:
+Be as specific as you can with your search string. You should be close to the SSID name you want to change. If the results for your change are not sufficient then press "n" for no and there will be no status change.
+
+**Example output:**
 
 ```bash
 (venv) $ python meraki_shutdown_ssid.py TEST
@@ -98,34 +101,23 @@ Changed status of the following enabled SSIDs:
 ╘═══════╧════════════════╧══════════════════╧════════════════════╧═══════════════════╛
 ```
 
-### DevNet Sandbox
-
-You can test the script at the [Meraki Small Business DevNet Sandbox](https://devnetsandbox.cisco.com/RM/Diagram/Index/86cdf547-27ba-43f3-81a7-9c22f57cdf28).
-
 ## How to test the software
 
-Provide details on steps to test, versions of components/dependencies against which code was tested, date the code was last tested, etc. 
-If the repo includes automated tests, detail how to run those tests.
-If the repo is instrumented with a continuous testing framework, that is even better.
+To test the script please use the [Meraki Small Business DevNet Sandbox](https://devnetsandbox.cisco.com/RM/Diagram/Index/86cdf547-27ba-43f3-81a7-9c22f57cdf28) and follow the instructions provided for the sandbox setup as well as for configuration and usage on this page.
 
+> **Note:** You have only read-write access to a specific network on this DevNet sandbox organization which is named with your email address you reserved it at the end of the name of the network.
 
 ## Known issues
 
-Document any significant shortcomings with the code. If using [GitHub Issues](https://help.github.com/en/articles/about-issues) to track issues, make that known and provide any templates or conventions to be followed when opening a new issue.
+There are currently no known issues. Please use [GitHub Issues](https://github.com/nscon-gmbh/meraki-quick-check/issues) to open a new issue by providing a helpful description about the issue.
 
 ## Getting help
 
-Instruct users how to get help with this code; this might include links to an issues list, wiki, mailing list, etc.
-
-**Example**
-
-If you have questions, concerns, bug reports, etc., please create an issue against this repository.
+If you have questions, concerns, bug reports, etc., please create an issue against this repository or get in contact with the author.
 
 ## Getting involved
 
-This section should detail why people should get involved and describe key areas you are currently focusing on; e.g., trying to get feedback on features, fixing certain bugs, building important pieces, etc. Include information on how to setup a development environment if different from general installation instructions.
-
-General instructions on _how_ to contribute should be stated with a link to [CONTRIBUTING](./CONTRIBUTING.md) file.
+Please get involved by giving feedback on features, fixing certain bugs, building important pieces, etc.
 
 ## Author(s)
 
