@@ -14,8 +14,8 @@ A customer had the request to quickly shutdown a specific SSID which was availab
 1. Clone the repository and change into new directory:
 
     ```bash
-    git clone https://github.com/nscon-gmbh/meraki-shut-wifi.git`
-    cd meraki-shut-wifi
+    git clone https://github.com/nscon-gmbh/meraki-change-ssid-status.git
+    cd meraki-change-ssid-status
     ```
 
 2. Create and activate virtual environment:
@@ -42,7 +42,7 @@ Make sure to have a valid Meraki API key. Please check the [Meraki Dashboard API
 Enter the search string for the SSID(s) you want to change:
 
 ```bash
-python meraki_shutdown_ssid.py <SSID search string>
+python meraki-change-ssid-status.py <SSID search string>
 ```
 
 Be as specific as you can with your search string. You should be close to the SSID name you want to change. If the results for your change are not sufficient then press "n" for no and there will be no status change.
