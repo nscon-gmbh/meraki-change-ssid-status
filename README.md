@@ -5,7 +5,7 @@ Change the status of wireless SSIDs via Meraki Dashboard API.
 
 ## Use Case Description
 
-A customer had the request to quickly shutdown a specific SSID which was available on all Meraki site networks. The script searches through the networks of a chosen organization for the specified search string and returns the results of SSIDs found. Then you can choose if you want to change the status from enabled to disable or from disable to enable. A table with the results after the change will be provided at the end.
+A customer had the request to quickly disable a specific SSID which was available on all Meraki site networks. The script searches through the networks of a chosen organization for the specified search string and returns the results of SSIDs found. Then you can choose if you want to change the status from enabled to disable or from disable to enable. A table with the results after the change will be provided at the end.
 
 ## Installation
 
