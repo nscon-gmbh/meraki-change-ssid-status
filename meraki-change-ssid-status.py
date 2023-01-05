@@ -109,7 +109,7 @@ def get_ssids(dashboard, org_id):
                   f'in network "{network_name}"...')
 
     # Print table using the received data
-    print(f'\nFound "{ssid_search}" in the following enabled SSIDs:\n')
+    print(f'\nFound "{ssid_search}" in the following SSIDs:\n')
     print_ssids(table, headers)
 
     return ssid_data
@@ -161,7 +161,7 @@ def change_ssid_status(dashboard, ssid_data):
             table.append(row)
 
     # Print table using the received data
-    print('\nChanged status of the following enabled SSIDs:\n')
+    print('\nChanged status of the following SSIDs:\n')
     print_ssids(table, headers)
 
 
