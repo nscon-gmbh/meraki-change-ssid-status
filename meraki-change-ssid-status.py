@@ -193,9 +193,10 @@ else:
 
 # Set Meraki API Key via env variable or input if not set
 try:
-    api_key = os.environ.get('YOUR_MERAKI_API_KEY')
-except KeyError:
-    api_key = input('\nEnter your Meraki API key: ')
+    api_key = os.environ.get('YOUR_MERAKI_API_KEY') \
+        or input('\nEnter your Meraki API key: ')
+except KeyError as key_error:
+    print(f'ERROR: {key_error}')
 
 # Set API call, send logs to log folder and omit log output on console
 connect = meraki.DashboardAPI(api_key, log_path="logs", print_console=False)
