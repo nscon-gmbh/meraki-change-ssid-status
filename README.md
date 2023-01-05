@@ -74,7 +74,7 @@ Searching for "TEST" in SSID "WIFI TEST" in network "Network TEST"...
 
 ERROR: Skipping search for "TEST" in network "Network PROD"...
 
-Found "TEST" in the following enabled SSIDs:
+Found "TEST" in the following SSIDs:
 
 ╒═══════╤════════════════╤═══════════╤════════════╤═══════════╕
 │   No. │ Network Name   │ SSID Name │   SSID No. │ Enabled   │
@@ -88,7 +88,7 @@ Found "TEST" in the following enabled SSIDs:
 
 Change status of all found SSIDs? (y/n) y
 
-Changed status of the following enabled SSIDs:
+Changed status of the following SSIDs:
 
 ╒═══════╤════════════════╤══════════════════╤════════════════════╤═══════════════════╕
 │   No. │ Network Name   │ SSID Name        │ Enabled (before)   │ Enabled (after)   │
