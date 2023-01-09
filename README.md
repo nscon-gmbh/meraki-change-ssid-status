@@ -1,5 +1,8 @@
-
 # Meraki change SSID status
+
+[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/nscon-gmbh/meraki-change-ssid-status)
+
+[![Run in VSCode](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-runable-icon.svg)](https://developer.cisco.com/devenv/?id=devenv-vscode-base&GITHUB_SOURCE_REPO=https://github.com/nscon-gmbh/meraki-change-ssid-status)
 
 Change the status of wireless SSIDs via Meraki Dashboard API.
 
